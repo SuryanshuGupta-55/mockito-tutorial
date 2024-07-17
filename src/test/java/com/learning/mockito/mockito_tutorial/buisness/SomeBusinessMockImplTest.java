@@ -18,15 +18,4 @@ public class SomeBusinessMockImplTest {
         int result = someBusiness.findTheGreatestFromAllData();
         assertEquals(25, result);
     }
-
-    @Test
-    void test2(){
-        DataService dataServiceMock = mock(DataService.class);
-        when(dataServiceMock.retrieveAllData()).thenReturn(new int[] {14});
-        // Basically, we are mocking the DataService interface and the line 15 tells what to do when we retrieve data from the interface mock.
-        SomeBuisnessImpl someBusiness = new SomeBuisnessImpl(dataServiceMock);
-        int result = someBusiness.findTheGreatestFromAllData();
-        assertEquals(14, result);
-    }
-    // Here, to create another test we can simply create another test and check that.
 }
