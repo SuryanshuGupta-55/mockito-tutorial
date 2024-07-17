@@ -1,10 +1,10 @@
 package com.learning.mockito.mockito_tutorial.buisness;
 
-public class SomeBuisnessImpl {
+public class SomeBusinessImpl {
 
 
     private final DataService dataService;
-    SomeBuisnessImpl(DataService dataService){
+    SomeBusinessImpl(DataService dataService){
         this.dataService = dataService;
     }
     public int findTheGreatestFromAllData(){

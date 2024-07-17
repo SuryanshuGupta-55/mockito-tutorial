@@ -10,7 +10,7 @@ public class SomeBusinessStubImplTest {
     @Test
     void test(){
         DataServiceStub dataServiceStub = new DataServiceStub();
-        SomeBuisnessImpl someBusiness = new SomeBuisnessImpl(dataServiceStub);
+        SomeBusinessImpl someBusiness = new SomeBusinessImpl(dataServiceStub);
         int result = someBusiness.findTheGreatestFromAllData();
         assertEquals(24, result);
     }
